@@ -28,8 +28,6 @@ A guide for programming in style.
 * Name the enumeration parameter the singular of the collection.
 * Name variables, methods, and classes to reveal intent.
 * Treat acronyms as words in names (```XmlHttpRequest``` not ```XMLHTTPRequest```), even if the acronym is the entire name (class ```Html``` not class ```HTML```).
-* Name variables holding a factory with ```_factory``` (```user_factory```).
-* Name variables created by a factory after the factory (```user_factory``` creates ```user```).
 
 ## Organization
 
@@ -77,3 +75,36 @@ A guide for programming in style.
 * Use ```each```, not ```for```, for iteration.
 * Use the JSON style hash syntax instead of hashrockets.
 * Use heredocs for multi-line strings.
+
+## Rails
+
+* Avoid ```member``` and ```collection``` routes.
+* Use private instead of protected when defining controller methods.
+* Name date columns with ```_on``` suffixes.
+* Name datetime columns with ```_at``` suffixes.
+* Name initializers for their gem name.
+* Order ActiveRecord associations alphabetically by attribute name.
+* Order ActiveRecord validations alphabetically by attribute name.
+* Order controller contents: filters, public methods, private methods.
+* Order i18n translations alphabetically by key name.
+* Order model contents: constants, macros, public methods, private methods.
+* Put application-wide partials in the ```app/views/application``` directory.
+* Use the default ```render 'partial'``` syntax over ```render partial: 'partial'```.
+
+### Testing/RSpec
+
+* Avoid the ```private``` keyword in specs.
+* Order ActiveRecord association tests alphabetically by attribute name.
+* Order ActiveRecord validation tests alphabetically by attribute name.
+* Prefer ```eq``` to ```==```.
+* Prefer [```let``` and ```let!```](http://stackoverflow.com/questions/5359558/when-to-use-rspec-let/5359979#5359979) to ```before```.
+* Use RSpec's [```expect syntax```](http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax).
+* Use ```not_to``` instead of ```to_not``` in RSpec expectations.
+* Use [contexts to organize](http://betterspecs.org/#contexts) your tests.
+* Name outer ```describe``` blocks after the method under test. Use ```.method``` for class methods and ```#method``` for instance methods.
+
+#### Factories
+
+* Order ```factories.rb``` contents: sequences, traits, factory definitions.
+* Order factory definitions alphabetically by factory name.
+* Use one ```factories.rb``` file per project.
