@@ -36,6 +36,15 @@ A guide for programming in style.
 * Order methods so that caller methods are earlier in the file than the methods they call.
 * Order methods so that methods are as close as possible to other methods they call.
 
+## CoffeeScript
+
+* Initialize arrays using ```[]```.
+* Initialize empty objects and hashes using ```{}```.
+* Use hyphen-separated filenames, such as ```coffee-script.coffee```.
+* Use ```PascalCase``` for classes, ```lowerCamelCase``` for variables and functions, ```SCREAMING_SNAKE_CASE``` for constants, ```_single_leading_underscore``` for private variables and functions.
+* Prefer ```is``` to ```==``` or ```===```.
+* Prefer ```or``` and ```and``` to ```||``` and ```&&```.
+
 ## Ruby
 
 * Avoid comments. Write [self-documenting code](http://en.wikipedia.org/wiki/Self-documenting).
@@ -62,7 +71,7 @@ A guide for programming in style.
 * Use ```{...}``` for single-line blocks. Use ```do..end``` for multi-line blocks.
 * Use ```?``` suffix for predicate methods.
 * Use ```!``` suffix for potentially "dangerous" methods (i.e. methods that modify self or the arguments, etc.). Bang methods should only exist if a non-bang method exists.
-* Use ```CamelCase``` for classes and modules, ```snake_case``` for variables and methods, ```SCREAMING_SNAKE_CASE``` for constants.
+* Use ```PascalCase``` for classes and modules, ```snake_case``` for variables and methods, ```SCREAMING_SNAKE_CASE``` for constants.
 * Use ```def self.method```, not ```def Class.method``` or ```class << self```.
 * Use ```def``` with parentheses when there are arguments. Omit the parentheses when the method doesn’t accept any arguments.
 * Use ```each```, not ```for```, for iteration.
