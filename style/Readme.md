@@ -101,6 +101,7 @@ A guide for programming in style.
 * Use RSpec's [```expect syntax```](http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax).
 * Use ```not_to``` instead of ```to_not``` in RSpec expectations.
 * Use [contexts to organize](http://betterspecs.org/#contexts) your tests.
+* Use 'should' to prefix ```it``` block descriptions.
 * Name outer ```describe``` blocks after the method under test. Use ```.method``` for class methods and ```#method``` for instance methods.
 
 #### Factories
