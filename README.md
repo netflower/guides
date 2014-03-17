@@ -16,6 +16,11 @@ A note on the language:
 * "Prefer" indicates a better option and its alternative to watch out for.
 * "Use" is a positive instruction.
 
+Commit messages:
+
+* Use third-person singular
+* Don't use a mark at the end of a commit message
+
 ## Credits
 
 ![netflower](http://netflower.de/img/Netflower.png)
