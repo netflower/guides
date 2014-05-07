@@ -109,3 +109,8 @@ A guide for programming in style.
 * Order ```factories.rb``` contents: sequences, traits, factory definitions.
 * Order factory definitions alphabetically by factory name.
 * Use one ```factories.rb``` file per project.
+
+## Objective-C
+
+* Use [objective-clean](http://objclean.com) for automated style checking.
+* Use the Netflower's ```StyleSettings.plist``` contained in the ```lib``` directory as the configuration file.
