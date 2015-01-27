@@ -140,7 +140,6 @@ Use [Hound](https://houndci.com) to automatically review your code and comment o
 ## Rails
 
 * Avoid ```member``` and ```collection``` routes.
-* Use private instead of protected when defining controller methods.
 * Name date columns with ```_on``` suffixes.
 * Name datetime columns with ```_at``` suffixes.
 * Name initializers for their gem name.
@@ -150,7 +149,9 @@ Use [Hound](https://houndci.com) to automatically review your code and comment o
 * Order i18n translations alphabetically by key name.
 * Order model contents: constants, macros, public methods, private methods.
 * Put application-wide partials in the ```app/views/application``` directory.
+* Use private instead of protected when defining controller methods.
 * Use the default ```render 'partial'``` syntax over ```render partial: 'partial'```.
+* Use a ```scope``` for queries that fit into a single line and a class method otherwise.
 
 ### Routes
 
