@@ -20,7 +20,7 @@ A note on the language:
 
 ## Credits
 
-![netflower](http://netflower.de/img/Netflower.png)
+![netflower](https://cloud.githubusercontent.com/assets/464565/5997997/91da2232-aac2-11e4-9278-fdf21fb8a6e9.png)
 
 Guides is maintained by [netflower Ltd. & Co. KG][ne].
 
